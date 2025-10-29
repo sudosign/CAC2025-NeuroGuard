@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background-image: linear-gradient(to bottom, #111316, #101921);
+    color: #e0e0e0;
+}
+
+/* Main Content Styles */
+.main-content {
+  margin-top: 5rem;
+  padding: 2rem;
+}
+
+/* Live Feed Box */
+.live-feed-box {
+  background-color: #12181d;
+  color: #a0a0a0;
+  font-family: "IBM Plex Sans", sans-serif;
+  height: 200px;
+  overflow-y: hidden;
+}
+
+/* Risk Level Styles */
+.risk-level {
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  display: inline-block;
+  font-size: 0.75rem;
+}
+.risk-low {
+  background-color: #16a34a;
+  color: white;
+}
+.risk-moderate {
+  background-color: #ca8a04;
+  color: white;
+}
+.risk-high {
+  background-color: #c2410c;
+  color: white;
+}
+.risk-severe {
+  background-color: #991b1b;
+  color: white;
+}
+
+/* Chart & Fullscreen Styles */
+.chart-container {
+  height: 20rem;
+  position: relative;
+}
+
+canvas {
+  display: block;
+}
+
+.chart-wrapper {
+  position: relative;
+  user-select: none;
+}
+.chart-hint {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 0.7rem;
+  color: rgba(160, 160, 160, 0.5);
+  pointer-events: none;
+}
+
+/* Grid Layouts */
+.risk-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .risk-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.risk-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.scat-button {
+  display: block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out;
+}
+.scat-button:hover {
+  background-color: #2563eb;
+}
